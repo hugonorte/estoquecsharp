@@ -82,7 +82,7 @@ public class EstoqueManager
         _estoque[produtoId] = novaQuantidade;
     }
     
-    // Método para listar todo o estoque (útil para depuração ou relatórios)
+    // Método. para listar todo o estoque (útil para depuração ou relatórios)
     public Dictionary<int, int> ListarEstoque()
     {
         return new Dictionary<int, int>(_estoque);
