@@ -7,7 +7,7 @@ class Program
     {
         // Inicialização do sistema
         var estoqueManager = EstoqueManager.GetInstance();
-        var gerenciadorEstoque = new GerenciadorEstoque();
+        var gerenciadorEstoque = new ObservadorEstoque();
         var interfaceUsuario = new InterfaceUsuario();
         gerenciadorEstoque.AdicionarObservador(interfaceUsuario);
         
@@ -96,7 +96,7 @@ class Program
         Console.WriteLine("Funcionalidade não implementada neste exemplo.");
     }
 
-    static void FinalizarCompra(Carrinho carrinho, EstoqueManager estoqueManager, GerenciadorEstoque gerenciadorEstoque)
+    static void FinalizarCompra(Carrinho carrinho, EstoqueManager estoqueManager, ObservadorEstoque observadorEstoque)
     {
         // Aqui você implementaria a lógica para finalizar a compra
         // Incluindo a atualização do estoque

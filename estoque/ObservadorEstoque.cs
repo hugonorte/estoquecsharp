@@ -2,7 +2,7 @@ using estoque.Interfaces;
 
 namespace estoque;
 
-public class GerenciadorEstoque
+public class ObservadorEstoque
 {
     private List<IObservadorEstoque> _observadores = new List<IObservadorEstoque>();
     private Dictionary<int, int> _estoque = new Dictionary<int, int>();
