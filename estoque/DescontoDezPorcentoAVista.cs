@@ -2,7 +2,7 @@ using estoque.Interfaces;
 
 namespace estoque;
 
-public class DescontoDezPorcento : IEstrategiaPrecificacao
+public class DescontoDezPorcentoAVista : IEstrategiaPrecificacao
 {
     public decimal CalcularPreco(decimal precoBase)
     {

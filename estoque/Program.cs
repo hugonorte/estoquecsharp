@@ -17,7 +17,7 @@ class Program
         
         // Definição de estratégias de precificação
         produto1.SetEstrategiaPrecificacao(new PrecoNormal());
-        produto2.SetEstrategiaPrecificacao(new DescontoDezPorcento());
+        produto2.SetEstrategiaPrecificacao(new DescontoDezPorcentoAVista());
 
         // Simulação de adição de estoque
         estoqueManager.AtualizarEstoque(produto1.Id, 100);
